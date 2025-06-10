@@ -71,18 +71,23 @@ const Layout = () => {
 
                     <main className="main-content">
                         <div className="main-content-header">
+                            <div className='user-controls'>
+                                <button className="user-profile-button" aria-label="User menu">
+                                    <FiUser />
 
-                            <button className="user-profile-button" aria-label="User menu">
-                                <FiUser />
+                                </button>
+                                <button className="logout-button" onClick={handleLogout}>Logout</button>
+                            </div>
 
-                            </button>
+
                         </div>
 
                         <div className="page-content">
                             <Outlet />
                         </div>
-                        <button onClick={handleLogout}>Logout</button>
+
                     </main>
+
                 </div>
             </div>
         </>

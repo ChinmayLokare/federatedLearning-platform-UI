@@ -169,3 +169,25 @@
   padding: 24px 48px; /* Add padding back for the actual page content */
   flex-grow: 1; /* Allow page content to take remaining space */
 }
+
+.user-controls{
+  display: flex;
+  width: 150px;
+  justify-content: space-between;
+
+}
+
+.logout-button{
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    border-radius: 6px;
+    text-decoration: none;
+    background-color: var(--accent-primary);
+    color: #fff;
+    font-weight: 500;
+    border: 0;
+    cursor: pointer;
+    
+    /* transition: background-color 0.2s ease, color 0.2s ease; */
+}

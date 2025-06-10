@@ -24,7 +24,8 @@ const DashboardPage = () => {
         <div className="dashboard-container">
             <div className="welcome-message">
                 <h1>
-                    Welcome back, {currentUser?.username}!
+                    {console.log('currentUser - ', currentUser)}
+                    Welcome, {currentUser?.username}!
                 </h1>
                 <h2 className="tagline">Ready to innovate?</h2>
             </div>
