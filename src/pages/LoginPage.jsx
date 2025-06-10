@@ -10,6 +10,8 @@ const LoginPage = () => {
     const [isLoading, setIsLoading] = useState(false);
     const navigate = useNavigate();
     const auth = useAuth();
+    const API_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:8081/api';
+
 
     const handleSubmit = async (event) => {
         event.preventDefault();
@@ -29,7 +31,7 @@ const LoginPage = () => {
         };
 
         try {
-            const response = await fetch("http://localhost:8081/api/auth/login", {
+            const response = await fetch(API_URL + "/auth/login", {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
