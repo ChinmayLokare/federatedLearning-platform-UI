@@ -126,7 +126,7 @@ const RegisterPage = () => {
 
                 {/* Password Input Group */}
                 <div className="form-group">
-                    <label htmlFor="password">Passwordd</label>
+                    <label htmlFor="password">Passwordddd</label>
                     <input
                         type="password"
                         id="password"
