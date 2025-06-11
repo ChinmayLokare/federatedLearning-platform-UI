@@ -17,6 +17,7 @@ const RegisterPage = () => {
     const fullApiUrl = `${API_SERVER_ROOT}${endpointPath}`;
 
     const handleSubmit = async (event) => {
+        console.log(' 1 fullApiUrl - ', fullApiUrl);
         event.preventDefault();
         setSuccessMessage('');
         setError('');
@@ -41,7 +42,7 @@ const RegisterPage = () => {
         };
 
         try {
-            console.log('fullApiUrl - ', fullApiUrl);
+            console.log(' 2 fullApiUrl - ', fullApiUrl);
             const response = await fetch(fullApiUrl, {
                 method: 'POST',
                 headers: {
