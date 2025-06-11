@@ -10,8 +10,8 @@ const LoginPage = () => {
     const [isLoading, setIsLoading] = useState(false);
     const navigate = useNavigate();
     const auth = useAuth();
-    const API_SERVER_ROOT = import.meta.env.VITE_API_BASE_URL || 'http://localhost:8081';
-    const endpointPath = '/api/auth/login';
+    const API_SERVER_ROOT = import.meta.env.VITE_API_BASE_URL || 'http://localhost:8081/';
+    const endpointPath = 'api/auth/login';
     const fullApiUrl = `${API_SERVER_ROOT}${endpointPath}`;
 
 
