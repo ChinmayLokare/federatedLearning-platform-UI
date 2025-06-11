@@ -41,6 +41,7 @@ const RegisterPage = () => {
         };
 
         try {
+            console.log('fullApiUrl - ', fullApiUrl);
             const response = await fetch(fullApiUrl, {
                 method: 'POST',
                 headers: {
