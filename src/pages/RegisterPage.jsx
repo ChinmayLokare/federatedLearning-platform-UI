@@ -42,6 +42,7 @@ const RegisterPage = () => {
         };
 
         try {
+            console.log('API_SERVER_ROOT - ', API_SERVER_ROOT);
             console.log(' 2 fullApiUrl - ', fullApiUrl);
             const response = await fetch(fullApiUrl, {
                 method: 'POST',
