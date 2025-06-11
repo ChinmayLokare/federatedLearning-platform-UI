@@ -86,6 +86,7 @@ const RegisterPage = () => {
         } catch (err) {
             // This catch block handles network errors (e.g., server down, DNS issues)
             // or if response.json() fails for a non-JSON response (less likely if backend is consistent)
+            console.error('fullApiUrl - ', fullApiUrl);
             console.error('Registration API call failed:', err);
             setError('An error occurred during registration. Please try again later. (Network or parsing error)');
         } finally {
