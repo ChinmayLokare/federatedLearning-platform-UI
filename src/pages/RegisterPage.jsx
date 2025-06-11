@@ -12,7 +12,9 @@ const RegisterPage = () => {
     const [isLoading, setIsLoading] = useState(false);
     const [successMessage, setSuccessMessage] = useState('');
     const navigate = useNavigate();
-    const API_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:8081/';
+    const API_SERVER_ROOT = import.meta.env.VITE_API_BASE_URL || 'http://localhost:8081';
+    const endpointPath = '/api/auth/register';
+    const fullApiUrl = `${API_SERVER_ROOT}${endpointPath}`;
 
     const handleSubmit = async (event) => {
         event.preventDefault();
@@ -39,7 +41,7 @@ const RegisterPage = () => {
         };
 
         try {
-            const response = await fetch(API_URL + "api/auth/register", {
+            const response = await fetch(fullApiUrl, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
