@@ -97,7 +97,7 @@ const RegisterPage = () => {
 
     return (
         <div className="auth-container">
-            <h2>Register</h2>
+            <h2>Registerrrrr</h2>
             <form onSubmit={handleSubmit}> {/* Add basic submit handler */}
 
                 {/* Username Input Group */}
